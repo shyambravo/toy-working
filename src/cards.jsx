@@ -1,5 +1,4 @@
 import React from 'react';
-import Featured from "./Featured";
 import {delob} from "./ob";
 
 var ob2 = JSON.parse(localStorage.getItem("users") || "[]");
@@ -31,8 +30,6 @@ function Cards(props) {
         );
         
         /* */
-    }else if(props.filter==="featured"){
-        return <Featured />
     }
 }
 
